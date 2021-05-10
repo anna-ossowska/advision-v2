@@ -368,6 +368,16 @@ body {
   .header__text-box {
     text-align: center; }
 
+.header-blog {
+  background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.8), rgba(0, 0, 0, 0.5)), url("../images/home/blog.jpg") no-repeat center center/cover;
+  height: 40vh;
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-blog__text-box {
+    text-align: center; }
+
 .navigation {
   display: flex;
   align-items: center;
@@ -424,7 +434,7 @@ body {
     .footer__icon:hover {
       opacity: 0.8; }
   .footer__text {
-    color: #fff;
+    color: #f5f5f5;
     letter-spacing: 0.7px;
     font-size: 1.5rem;
     margin-top: 1.5rem; }
@@ -440,3 +450,9 @@ body {
 .section-mgmt {
   padding: 5rem;
   text-align: center; }
+
+.blog-container {
+  max-width: 128rem;
+  padding: 0 1.5rem;
+  margin: 9rem auto;
+  overflow: hidden; }
