@@ -1,0 +1,25 @@
+.cases {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0.4rem;
+  }
+
+  &__img {
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+    transition: opacity 0.5s ease-in-out;
+    margin-bottom: 0.4rem;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
