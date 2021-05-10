@@ -102,3 +102,21 @@
     transition-delay: 0.2s;
   }
 }
+
+.btn--submit {
+  width: 100%;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1.4rem 2.5rem;
+  background: $color-navy-blue;
+  color: $color-white;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: $color-secondary-light;
+    color: #fff;
+  }
+}

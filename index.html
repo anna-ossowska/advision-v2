@@ -123,7 +123,7 @@
             </div>
           </div>
           <div class="card__col">
-            <div class="card__col--2 bg-secondary">
+            <div class="card__col--2 bg--dark">
               <h4 class="heading-tertiary mb-2">| About our work</h4>
               <h2 class="heading-secondary">We create bespoke solutions</h2>
               <p class="paragraph">
@@ -266,7 +266,7 @@
             </div>
           </div>
           <div class="card__col">
-            <div class="card__col--2 bg-secondary">
+            <div class="card__col--2 bg--dark">
               <h4 class="heading-tertiary mb-2">| December 15, 2020</h4>
               <h2 class="heading-secondary">
                 COVID-19 vs. Facing Digital Transformation
@@ -327,6 +327,73 @@
             <h5 class="mgmt__person mt-3 mb-2">Bob Johnson</h5>
             <div class="mgmt__divider"></div>
             <p class="mgmt__position mt-2 mb-2">Marketing Head</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="card bg--light">
+        <div class="card__row">
+          <div class="card__col">
+            <div class="card__col--1">
+              <img
+                class="card__img"
+                src="images/home/contact.jpg"
+                alt="people"
+              />
+            </div>
+          </div>
+          <div class="card__col">
+            <div class="card__col--2">
+              <h2 class="heading-secondary">Request Callback</h2>
+              <form
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+                class="form"
+              >
+                <div class="form__control">
+                  <label class="form__label" for="name">Name:</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+                <div class="form__control">
+                  <label class="form__label" for="email">Email:</label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="form__control">
+                  <label class="form__label" for="phone">Phone:</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+                <div class="form__control">
+                  <label class="form__label" for="message">Message:</label>
+                  <textarea
+                    class="form__control form__control-textarea"
+                    name="message"
+                    style="width: 100%"
+                  ></textarea>
+                </div>
+                <div class="py-1"></div>
+                <div data-netlify-recaptcha="true"></div>
+                <div class="py-1"></div>
+
+                <button type="submit" class="btn btn--submit">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

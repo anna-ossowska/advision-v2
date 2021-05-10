@@ -1,3 +1,13 @@
+.bg--dark {
+  background-color: $color-navy-blue;
+  color: $color-white;
+}
+
+.bg--light {
+  background-color: $color-grey-light-1;
+  color: inherit;
+}
+
 .py-1 {
   padding: 0.5rem 0;
 }
