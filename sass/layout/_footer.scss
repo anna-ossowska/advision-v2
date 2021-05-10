@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 12rem;
+  background-color: $color-navy-blue;
+
+  &__icon {
+    color: $color-white;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    padding: 0 1.15rem;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    letter-spacing: 0.7px;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
