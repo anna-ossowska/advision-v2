@@ -11,9 +11,9 @@
   padding: 0 3rem;
   transition: 0.5s;
 
-  // &--top {
-  //   background-color: transparent;
-  // }
+  &--top {
+    background-color: transparent;
+  }
 
   &__logo {
     background: url('../images/icons/logo-white.png') no-repeat center
@@ -45,7 +45,7 @@
     }
 
     &--current {
-      border-color: #e4491c;
+      border-color: $color-primary;
     }
   }
 }

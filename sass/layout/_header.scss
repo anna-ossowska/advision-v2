@@ -1,10 +1,9 @@
 .header {
   background: linear-gradient(
-      to right bottom,
-      rgba($color-secondary-dark, 0.8),
-      rgba($color-black, 0.7)
-    ),
-    url('../images/home/city.jpg');
+    to right bottom,
+    rgba($color-secondary-dark, 0.8),
+    rgba($color-black, 0.5)
+  );
   background-position: center;
   background-size: cover;
   height: 100vh;
