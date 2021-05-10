@@ -379,7 +379,8 @@ body {
   position: fixed;
   top: 0;
   padding: 0 3rem;
-  transition: 0.5s; }
+  transition: 0.5s;
+  z-index: 1000; }
   .navigation--top {
     background-color: transparent; }
   .navigation__logo {
