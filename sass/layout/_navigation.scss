@@ -12,6 +12,12 @@
   transition: 0.5s;
   z-index: 1000;
 
+  @include respond(phone) {
+    flex-direction: column;
+    height: 15rem;
+    padding: 2rem;
+  }
+
   &--top {
     background-color: transparent;
   }
@@ -26,6 +32,10 @@
   &__list {
     list-style: none;
     display: flex;
+
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__link {
@@ -40,6 +50,11 @@
     border-bottom: 0.3rem transparent solid;
     padding-bottom: 1rem;
     transition: border-color 0.5s ease-in-out;
+
+    @include respond(phone) {
+      padding: 1rem 0.25rem;
+      margin: 0 1.2rem;
+    }
 
     &:hover {
       border-color: $color-grey-light-2;

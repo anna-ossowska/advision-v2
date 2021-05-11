@@ -12,7 +12,15 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    height: 80vh;
+  }
+
   &__text-box {
     text-align: center;
+
+    @include respond(phone) {
+      margin-top: 10rem;
+    }
   }
 }
