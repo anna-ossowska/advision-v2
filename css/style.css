@@ -62,7 +62,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.4px;
   font-weight: 300;
-  font-size: 3.6rem;
+  font-size: 3.25rem;
   line-height: 1.2; }
   .heading-secondary--underline {
     border-bottom: rgba(1, 73, 102, 0.3) solid 1px;
@@ -77,7 +77,7 @@ body {
   font-size: 1.5rem; }
 
 .paragraph {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin: 2rem 0 2.8rem 0;
   text-align: justify; }
   .paragraph--center {
@@ -92,9 +92,9 @@ body {
   color: inherit; }
 
 .container {
-  max-width: 128rem;
+  max-width: 90%;
   padding: 0 1.5rem;
-  margin: 9rem auto;
+  margin: 7rem auto;
   overflow: hidden; }
 
 .py-1 {
@@ -168,7 +168,7 @@ body {
     font-size: 2.5rem;
     font-weight: 400; }
   .about-box__text {
-    font-size: 2.2rem; }
+    font-size: 2.1rem; }
   .about-box__icon {
     height: 10rem;
     width: 10rem; }
@@ -189,7 +189,7 @@ body {
 .btn {
   text-decoration: none;
   display: inline-block;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   cursor: pointer; }
 
 .btn--light {
@@ -230,7 +230,7 @@ body {
 
 .btn__span {
   display: inline-block;
-  padding: 1.3rem 3.5rem; }
+  padding: 1.2rem 2.9rem; }
   .btn__span--light::before, .btn__span--light::after {
     background: #fff; }
   .btn__span--dark::before, .btn__span--dark::after {
@@ -256,7 +256,7 @@ body {
   width: 100%;
   margin-top: 1rem;
   display: inline-block;
-  padding: 1.4rem 2.5rem;
+  padding: 1.2rem 2.9rem;
   background: #003246;
   color: #fff;
   border: none;
@@ -293,6 +293,13 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .card__col--2 {
+        padding: 4.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .card__col--blog {
+      flex: 100%;
+      max-width: 100%; } }
 
 .card__img {
   width: 100%;
@@ -393,14 +400,15 @@ body {
   text-align: center;
   height: 100%;
   flex-wrap: wrap; }
-  .mgmt__container:not(:last-child) {
-    margin-bottom: 4rem; }
-    @media only screen and (max-width: 75em) {
-      .mgmt__container:not(:last-child) {
-        width: 100%; } }
-    @media only screen and (max-width: 37.5em) {
-      .mgmt__container:not(:last-child) {
-        margin-bottom: 3rem; } }
+  @media only screen and (max-width: 75em) {
+    .mgmt__container {
+      width: 100%; } }
+  @media only screen and (max-width: 75em) {
+    .mgmt__container:not(:last-child) {
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .mgmt__container:not(:last-child) {
+      margin-bottom: 3rem; } }
   .mgmt__img {
     width: 40vh;
     height: 40vh;
@@ -417,7 +425,7 @@ body {
     font-weight: 300;
     font-size: 2.8rem; }
   .mgmt__position {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: #707070; }
   .mgmt__divider {
     height: 0.2rem;
@@ -431,10 +439,13 @@ body {
   opacity: 0.7;
   padding: 10rem;
   border-radius: 3px; }
+  @media only screen and (max-width: 37.5em) {
+    .post {
+      padding: 6rem; } }
   .post__article {
     text-align: justify;
     hyphens: auto;
-    font-size: 2.2rem; }
+    font-size: 2.1rem; }
   .post__source {
     font-size: 1.5rem; }
 
@@ -483,16 +494,19 @@ body {
 
 .header-blog {
   background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.8), rgba(0, 0, 0, 0.5)), url("../images/home/blog.jpg") no-repeat center center/cover;
-  height: 40vh;
+  height: 50vh;
   z-index: -10;
   display: flex;
   justify-content: center;
   align-items: center; }
   .header-blog__text-box {
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .header-blog__text-box {
+        margin-top: 10rem; } }
 
 .header {
-  background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.8), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.6), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
   height: 100vh;
