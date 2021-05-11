@@ -6,6 +6,18 @@
   height: 100%;
   flex-wrap: wrap;
 
+  &__container:not(:last-child) {
+    margin-bottom: 4rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+  }
+
   &__img {
     width: 40vh;
     height: 40vh;
@@ -13,6 +25,11 @@
     overflow: hidden;
     object-fit: cover;
     margin: 0 2.5rem;
+
+    @include respond(tab-land) {
+      width: 28vh;
+      height: 28vh;
+    }
   }
 
   &__person {
@@ -23,6 +40,7 @@
 
   &__position {
     font-size: 2.2rem;
+    color: $color-grey-dark-2;
   }
 
   &__divider {
