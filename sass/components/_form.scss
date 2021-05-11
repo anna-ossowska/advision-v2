@@ -9,8 +9,6 @@
   }
 
   &__control {
-    margin-bottom: 1.5rem;
-
     &-textarea {
       height: 12rem;
       font-family: 'Open Sans', sans-serif;
@@ -27,6 +25,10 @@
         box-shadow: 0 0 0 3px $color-orange-light;
         padding: 1rem 1.5rem;
       }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -50,4 +52,10 @@
       padding: 1rem 1.5rem;
     }
   }
+}
+
+// Netlify ReCaptcha
+.rc-anchor-normal {
+  height: 74px;
+  width: 170px;
 }

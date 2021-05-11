@@ -362,22 +362,22 @@ body {
     display: block;
     margin-bottom: 0.5rem;
     font-size: 2rem; }
-  .form__control {
+  .form__control-textarea {
+    height: 12rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    border: #adadad 0.5px solid;
+    padding: 1rem 1.5rem;
+    border-radius: 0.35rem;
+    transition: box-shadow 0.15s ease-in-out; }
+    .form__control-textarea:focus {
+      outline-color: #fadbd2;
+      border: 0.5px solid rgba(228, 73, 28, 0.2);
+      box-shadow: 0 0 0 3px #fadbd2;
+      padding: 1rem 1.5rem; }
+  .form__control:not(:last-child) {
     margin-bottom: 1.5rem; }
-    .form__control-textarea {
-      height: 12rem;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-size: 1.8rem;
-      border: #adadad 0.5px solid;
-      padding: 1rem 1.5rem;
-      border-radius: 0.35rem;
-      transition: box-shadow 0.15s ease-in-out; }
-      .form__control-textarea:focus {
-        outline-color: #fadbd2;
-        border: 0.5px solid rgba(228, 73, 28, 0.2);
-        box-shadow: 0 0 0 3px #fadbd2;
-        padding: 1rem 1.5rem; }
   .form__input {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -395,6 +395,10 @@ body {
       border: 0.5px solid rgba(228, 73, 28, 0.2);
       box-shadow: 0 0 0 3px #fadbd2;
       padding: 1rem 1.5rem; }
+
+.rc-anchor-normal {
+  height: 74px;
+  width: 170px; }
 
 .mgmt {
   display: flex;
