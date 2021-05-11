@@ -37,6 +37,12 @@ body {
   font-weight: 300;
   font-size: 4rem;
   line-height: 1.2;
+
+  &--underline {
+    border-bottom: rgba($color-secondary-light, 0.3) solid 1px;
+    color: $color-secondary-light;
+    padding-bottom: 1rem;
+  }
 }
 
 .heading-tertiary {

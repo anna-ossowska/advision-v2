@@ -17,19 +17,18 @@
     flex: 1;
     // mobile:
     // flex: 100%;
-  }
+    &--1 {
+      height: 100%;
+    }
 
-  &__col--1 {
-    height: 100%;
-  }
-
-  &__col--2 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 6rem;
+    &--2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 6rem;
+    }
   }
 
   &__img {
@@ -38,11 +37,34 @@
     object-fit: cover;
   }
 
-  &__author {
-    font-size: 2rem;
+  &__author,
+  &__date {
+    font-size: 1.8rem;
+
+    &--light {
+      color: $color-grey-dark-1;
+    }
+
+    &--dark {
+      color: $color-white;
+    }
   }
 
-  &__date {
-    font-size: 2rem;
+  &__icon {
+    &--light {
+      color: $color-grey-dark-1;
+    }
+
+    &--dark {
+      color: $color-white;
+    }
   }
+}
+
+.bi-person {
+  font-size: 2.15rem;
+}
+
+.bi-calendar2-check {
+  margin-left: 0.18rem;
 }

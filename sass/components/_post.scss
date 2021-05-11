@@ -1,0 +1,16 @@
+.post {
+  background-color: $color-grey-light-1;
+  opacity: 0.7;
+  padding: 10rem;
+  border-radius: 3px;
+
+  &__article {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 2.2rem;
+  }
+
+  &__source {
+    font-size: 1.5rem;
+  }
+}

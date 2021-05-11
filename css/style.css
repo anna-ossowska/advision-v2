@@ -46,6 +46,10 @@ body {
   font-weight: 300;
   font-size: 4rem;
   line-height: 1.2; }
+  .heading-secondary--underline {
+    border-bottom: rgba(1, 73, 102, 0.3) solid 1px;
+    color: #014966;
+    padding-bottom: 1rem; }
 
 .heading-tertiary {
   font-family: 'Montserrat', sans-serif;
@@ -65,6 +69,12 @@ body {
 .bg--light {
   background-color: #f5f5f5;
   color: inherit; }
+
+.container {
+  max-width: 128rem;
+  padding: 0 1.5rem;
+  margin: 9rem auto;
+  overflow: hidden; }
 
 .py-1 {
   padding: 0.5rem 0; }
@@ -233,22 +243,39 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1; }
-
-.card__col--1 {
-  height: 100%; }
-
-.card__col--2 {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 6rem; }
+  .card__col--1 {
+    height: 100%; }
+  .card__col--2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6rem; }
 
 .card__img {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.card__author, .card__date {
+  font-size: 1.8rem; }
+  .card__author--light, .card__date--light {
+    color: #333; }
+  .card__author--dark, .card__date--dark {
+    color: #fff; }
+
+.card__icon--light {
+  color: #333; }
+
+.card__icon--dark {
+  color: #fff; }
+
+.bi-person {
+  font-size: 2.15rem; }
+
+.bi-calendar2-check {
+  margin-left: 0.18rem; }
 
 .cases__row {
   display: flex;
@@ -336,6 +363,18 @@ body {
     display: block;
     margin: 0 auto; }
 
+.post {
+  background-color: #f5f5f5;
+  opacity: 0.7;
+  padding: 10rem;
+  border-radius: 3px; }
+  .post__article {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 2.2rem; }
+  .post__source {
+    font-size: 1.5rem; }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -356,6 +395,38 @@ body {
   text-align: center;
   height: 100%; }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 12rem;
+  background-color: #003246; }
+  .footer__icon {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    padding: 0 1.15rem;
+    transition: opacity 0.2s ease-in-out; }
+    .footer__icon:hover {
+      opacity: 0.8; }
+  .footer__text {
+    color: #f5f5f5;
+    letter-spacing: 0.7px;
+    font-size: 1.5rem;
+    margin-top: 1.5rem; }
+
+.header-blog {
+  background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.8), rgba(0, 0, 0, 0.5)), url("../images/home/blog.jpg") no-repeat center center/cover;
+  height: 40vh;
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-blog__text-box {
+    text-align: center; }
+
 .header {
   background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.8), rgba(0, 0, 0, 0.5));
   background-position: center;
@@ -366,16 +437,6 @@ body {
   justify-content: center;
   align-items: center; }
   .header__text-box {
-    text-align: center; }
-
-.header-blog {
-  background: linear-gradient(to right bottom, rgba(1, 26, 36, 0.8), rgba(0, 0, 0, 0.5)), url("../images/home/blog.jpg") no-repeat center center/cover;
-  height: 40vh;
-  z-index: -10;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .header-blog__text-box {
     text-align: center; }
 
 .navigation {
@@ -417,28 +478,6 @@ body {
     .navigation__link--current {
       border-color: #e4491c; }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 12rem;
-  background-color: #003246; }
-  .footer__icon {
-    color: #fff;
-    opacity: 0.6;
-    font-size: 1.5rem;
-    padding: 0 1.15rem;
-    transition: opacity 0.2s ease-in-out; }
-    .footer__icon:hover {
-      opacity: 0.8; }
-  .footer__text {
-    color: #f5f5f5;
-    letter-spacing: 0.7px;
-    font-size: 1.5rem;
-    margin-top: 1.5rem; }
-
 .section-about {
   padding: 5rem;
   background: #f5f5f5; }
@@ -450,9 +489,3 @@ body {
 .section-mgmt {
   padding: 5rem;
   text-align: center; }
-
-.blog-container {
-  max-width: 128rem;
-  padding: 0 1.5rem;
-  margin: 9rem auto;
-  overflow: hidden; }
