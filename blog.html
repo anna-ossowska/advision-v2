@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Our Blog</title>
   </head>
   <body>
@@ -59,7 +60,7 @@
     <!-- Card (Blog) -->
     <main>
       <div class="container">
-        <section class="card card--animated">
+        <section class="card">
           <div class="card__row">
             <div class="card__col card__col--blog">
               <div class="card__col--1">
@@ -67,7 +68,7 @@
               </div>
             </div>
             <div class="card__col">
-              <div class="card__col--2 bg--light">
+              <div class="card__col--2 bg--light" data-aos="fade">
                 <h2 class="heading-secondary">
                   COVID-19 vs. Facing Digital Transformation
                 </h2>
@@ -108,7 +109,7 @@
               </div>
             </div>
             <div class="card__col">
-              <div class="card__col--2 bg--dark">
+              <div class="card__col--2 bg--dark" data-aos="fade">
                 <h2 class="heading-secondary">
                   The Next Chapter of Data Privacy
                 </h2>
@@ -148,7 +149,7 @@
               </div>
             </div>
             <div class="card__col">
-              <div class="card__col--2 bg--light">
+              <div class="card__col--2 bg--light" data-aos="fade">
                 <h2 class="heading-secondary">
                   2021 banking and capital markets outlook
                 </h2>
@@ -203,6 +204,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/lightbox.min.js"></script>
+
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
   </body>
 </html>

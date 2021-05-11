@@ -9,7 +9,7 @@ $('#navigation a, .btn--main').on('click', function (e) {
       {
         scrollTop: $(hash).offset().top - 100,
       },
-      1300
+      1500
     );
   }
 });
