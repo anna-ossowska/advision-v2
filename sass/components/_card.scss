@@ -1,4 +1,8 @@
 .card {
+  &--animated {
+    animation: fadeIn 1s ease-in-out;
+  }
+
   &__row {
     display: flex;
     flex-direction: row;

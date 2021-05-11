@@ -267,6 +267,9 @@ body {
     background: #014966;
     color: #fff; }
 
+.card--animated {
+  animation: fadeIn 1s ease-in-out; }
+
 .card__row {
   display: flex;
   flex-direction: row;
