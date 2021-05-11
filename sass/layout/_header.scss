@@ -12,6 +12,14 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(tab-land) {
+    height: 80vh;
+  }
+
+  @include respond(tab-port) {
+    height: 80vh;
+  }
+
   @include respond(phone) {
     height: 80vh;
   }

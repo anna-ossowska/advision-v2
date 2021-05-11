@@ -66,4 +66,9 @@ body {
 .paragraph {
   font-size: 2.2rem;
   margin: 2rem 0 2.8rem 0;
+  text-align: justify;
+
+  &--center {
+    text-align: center;
+  }
 }

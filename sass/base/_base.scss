@@ -6,11 +6,11 @@ html {
   font-size: 62.5%; /* 10px / 16 */
 
   @include respond(tab-land) {
-    font-size: 56.25%;
+    font-size: 55%;
   }
 
   @include respond(tab-port) {
-    font-size: 50%;
+    font-size: 47%;
   }
 
   @include respond(phone) {

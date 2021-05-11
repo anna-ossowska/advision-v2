@@ -15,8 +15,12 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    // mobile:
-    // flex: 100%;
+
+    @include respond(phone) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
     &--1 {
       height: 100%;
     }

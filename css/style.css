@@ -8,10 +8,10 @@ html {
   /* 10px / 16 */ }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 55%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 47%; } }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 40.62%; } }
@@ -78,7 +78,10 @@ body {
 
 .paragraph {
   font-size: 2.2rem;
-  margin: 2rem 0 2.8rem 0; }
+  margin: 2rem 0 2.8rem 0;
+  text-align: justify; }
+  .paragraph--center {
+    text-align: center; }
 
 .bg--dark {
   background-color: #003246;
@@ -143,7 +146,7 @@ body {
   margin-top: 3rem; }
 
 .about-box {
-  width: 100%;
+  width: 33.3%;
   overflow: hidden;
   padding: 0 1.5rem;
   margin: 1rem auto;
@@ -151,6 +154,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .about-box {
+      width: 60%; }
+      .about-box:not(:last-child) {
+        margin: 1rem auto 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about-box {
+      width: 100%; } }
   .about-box__heading {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.4px;
@@ -161,9 +172,17 @@ body {
   .about-box__icon {
     height: 10rem;
     width: 10rem; }
+    @media only screen and (max-width: 75em) {
+      .about-box__icon {
+        height: 9rem;
+        width: 9rem; } }
     .about-box__icon--2 {
       height: 9.25rem;
       width: 6rem; }
+      @media only screen and (max-width: 75em) {
+        .about-box__icon--2 {
+          height: 8.5rem;
+          width: 5.15rem; } }
     .about-box__icon--3 {
       margin-left: 1rem; }
 
@@ -261,6 +280,10 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .card__col {
+      flex: 100%;
+      max-width: 100%; } }
   .card__col--1 {
     height: 100%; }
   .card__col--2 {
@@ -412,7 +435,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%; }
+  height: 100%;
+  flex-wrap: wrap; }
 
 .footer {
   display: flex;
@@ -455,6 +479,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      height: 80vh; } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      height: 80vh; } }
   @media only screen and (max-width: 37.5em) {
     .header {
       height: 80vh; } }
