@@ -1,4 +1,5 @@
 .card {
+  min-height: 50rem;
   &--animated {
     animation: fadeIn 1s ease-in-out;
   }
